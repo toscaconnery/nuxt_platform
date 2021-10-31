@@ -16,8 +16,8 @@
 </template>
 
 <script>
-    import LargeCardDisplay from "@/components/LargeCardDisplay"
-    import SmallCardDisplay from "@/components/SmallCardDisplay"
+    import LargeCardDisplay from "@/components/fire/LargeCardDisplay"
+    import SmallCardDisplay from "@/components/fire/SmallCardDisplay"
     import { largeCardSections, smallCardSections } from "@/assets/data.js"
     export default {
         components: { LargeCardDisplay, SmallCardDisplay },
@@ -26,7 +26,8 @@
                 largeCardInfo: largeCardSections,
                 smallCardSections: smallCardSections,
             }
-        }
+        },
+        layout: 'fire'
     }
 </script>
 

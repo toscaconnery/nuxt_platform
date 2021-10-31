@@ -16,7 +16,7 @@
 </template>
 
 <script>
-    import ReviewCard from "@/components/ReviewCard"
+    import ReviewCard from "@/components/fire/ReviewCard"
     export default {
         components: { ReviewCard },
         data() {

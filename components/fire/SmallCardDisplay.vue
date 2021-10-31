@@ -12,7 +12,7 @@
 </template>
 
 <script>
-    import SmallCard from "@/components/SmallCard"
+    import SmallCard from "@/components/fire/SmallCard"
     export default {
         components: { SmallCard },
         props: [

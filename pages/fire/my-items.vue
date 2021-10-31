@@ -12,10 +12,10 @@
 
 <script>
     import { mapState } from "vuex"
-    import MyItem from "@/components/MyItem"
+    import MyItem from "@/components/fire/MyItem"
     export default {
         components: { MyItem },
-        layout: 'no-nav',
+        layout: 'no-nav-fire',
         computed: {
             ...mapState(['myRentals'])
         },

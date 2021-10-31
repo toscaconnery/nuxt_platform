@@ -15,7 +15,7 @@
 </template>
 
 <script>
-    import LargeCard from "@/components/LargeCard"
+    import LargeCard from "@/components/fire/LargeCard"
     export default {
         components: { LargeCard },
         props: [

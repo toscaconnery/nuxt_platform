@@ -45,8 +45,8 @@
 
 <script>
     import { mapState } from "vuex"
-    import Reviews from "@/components/Reviews"
-    import RentModal from "@/components/RentModal"
+    import Reviews from "@/components/fire/Reviews"
+    import RentModal from "@/components/fire/RentModal"
     export default {
         components: { Reviews, RentModal },
         computed: {
@@ -56,7 +56,8 @@
             // ...mapState([
             //     'products'
             // ])
-        }
+        },
+        layout: 'fire'
     }
 </script>
 
