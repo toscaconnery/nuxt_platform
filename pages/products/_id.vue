@@ -32,6 +32,7 @@
             <div class="description-container">
                 <p>{{ product.description }}</p>
             </div>
+            <Reviews />
         </div>
         <div v-else class="container padding">
             Page not found
@@ -41,8 +42,9 @@
 
 <script>
     import { mapState } from "vuex"
+    import Reviews from "@/components/Reviews"
     export default {
-        components: {},
+        components: { Reviews },
         computed: {
             product() {
                 return this.$store.getters.getProductById(this.$route.params.id)
