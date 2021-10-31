@@ -15,7 +15,9 @@
 </template>
 
 <script>
+    import LargeCard from "@/components/LargeCard"
     export default {
+        components: { LargeCard },
         props: [
             'cardsSection'
         ]

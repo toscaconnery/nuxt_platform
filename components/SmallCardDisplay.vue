@@ -12,7 +12,9 @@
 </template>
 
 <script>
+    import SmallCard from "@/components/SmallCard"
     export default {
+        components: { SmallCard },
         props: [
             'cardsSection'
         ],

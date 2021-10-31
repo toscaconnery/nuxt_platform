@@ -25,7 +25,7 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: false,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -42,6 +42,6 @@ export default {
   },
 
   server: {
-    port: 6666,
+    port: 8765,
   }
 }

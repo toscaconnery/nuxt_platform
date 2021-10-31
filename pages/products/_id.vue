@@ -3,7 +3,6 @@
         <!-- Hello I'm route /products/id -->
         <!-- {{products}} -->
         <!-- {{ $route.params.id }} -->
-        <Nav/>
         <div v-if="product" class="container py-5">
             <div class="hero-container">
                 <img :src="require(`@/assets/images/${product.image}`)" alt="" class="image">
@@ -43,6 +42,7 @@
 <script>
     import { mapState } from "vuex"
     export default {
+        components: {},
         computed: {
             product() {
                 return this.$store.getters.getProductById(this.$route.params.id)
