@@ -15,7 +15,16 @@
                     is-range
                 />
             </div>
-            <b-button id="show-btn" variant="outline-danger" >Order</b-button>
+            <b-button 
+                id="show-btn" 
+                variant="outline-danger" 
+                @click="() => {
+                    addItem(product.id)
+                    hideModal()
+                }"
+            >
+                Order
+            </b-button>
             <!-- <div class="d-block text-center">
                 <h3>Hello From My Modal!</h3>
             </div>
@@ -27,7 +36,9 @@
 
 <script>
     // import vc-calendar from rom 'v-calendar'
+    import { mapMutations } from "vuex"
     export default {
+        props: ['product'],
         methods: {
             showModal() {
                 this.$refs['my-modal'].show()
@@ -40,6 +51,7 @@
             //     // when the modal has hidden
             //     this.$refs['my-modal'].toggle('#toggle-btn')
             // }
+            ...mapMutations(['addItem'])
         }
     }
 </script>

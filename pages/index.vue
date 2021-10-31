@@ -4,13 +4,13 @@
 			<Hero />
 			<LargeCardDisplay
 				v-for="cardInfo in largeCardInfo"
-				:key="cardInfo.id"
+				:key="'lg-'+cardInfo.id"
 				:cardsSection="cardInfo"
 			/>
 
 			<SmallCardDisplay 
 				v-for="cardInfo in smallCardSections"
-				:key="cardInfo.id"
+				:key="'sm-'+cardInfo.id"
 				:cardsSection="cardInfo"
 			/>
 
