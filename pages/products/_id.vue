@@ -9,6 +9,7 @@
                 <div class="info-box">
                     <h1>{{ product.title }}</h1>
                     <p class="snippet">{{ product.snippet }}</p>
+                    <RentModal />
                 </div>
             </div>
             <div class="whats-included-container">
@@ -43,8 +44,9 @@
 <script>
     import { mapState } from "vuex"
     import Reviews from "@/components/Reviews"
+    import RentModal from "@/components/RentModal"
     export default {
-        components: { Reviews },
+        components: { Reviews, RentModal },
         computed: {
             product() {
                 return this.$store.getters.getProductById(this.$route.params.id)
